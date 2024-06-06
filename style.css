@@ -1,0 +1,573 @@
+body{
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    display: block;
+    background-color: rgb(24, 23, 23);
+    font-weight: 600;
+color: white;
+}
+
+*{
+    box-sizing: border-box;
+}
+div{
+    display: block;
+}
+.normalHr{
+    margin: 0.5rem 0.5rem 1rem;
+    margin-inline-start: 44%;
+    margin-inline-end: 44%;
+}
+
+/* eliminar barra horizontal*/
+.row {
+     --bs-gutter-x: 0rem;
+}
+
+/* navbar */
+.container-fluid{
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    position: relative; 
+    background-color: rgb(24, 23,23);
+    font-size: 20px;
+   
+}
+.navbar {
+    padding: 0;
+  
+}
+.nav-link, .navbar-brand{
+      color: white;
+      font-size: 15px;
+      margin-left: 20px;
+}
+.navbar-nav a:hover, .navbar-brand:hover {
+color: rgb(0, 150, 255);
+    transition-duration: 0.6s;
+
+}
+
+/* Header */
+#header{
+    width: 100%;
+   height: 100vh;
+    background:linear-gradient(rgba(58, 56, 56, 0.4),rgba(0, 0, 0, 0.6)), url(./fondos/tableroCanvas2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#logo{
+     height:400px;
+     width: 400px;
+     filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.695))saturate(100%);
+
+     
+}
+
+
+/* Acerca de Nosotros */
+
+
+
+#aN {
+    text-align: center;
+    margin: 10px 10px 40px;
+    padding: 20px;
+    border-width: 2px;
+}
+#titleAN{
+    font-size: 80px;
+}
+#textAN{
+    font-size: 30px;
+}
+#pAN{
+    font-weight: 400;
+    font-size: 30px;
+}
+
+
+
+
+/* logos empresas */
+.port {
+    text-align: center;
+    background-color: #cfcaca;
+    height: auto;
+    background-size: 100%;
+    padding: 30px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: black;
+    border-image: initial;
+    margin: 5px 5px 60px;
+    border-radius: 10%;
+}
+.img-services{
+    height: 150px;
+    width: 150px;
+}
+/* empresas */
+.slider {
+    overflow: hidden;
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    border: 1px solid #000000;
+    position: relative;
+    border-radius: 10%;
+}
+
+.slides {
+    display: flex;
+    width: calc(100% * 5.33); /* 6 imágenes duplicadas para loop infinito */
+    animation: slide 18s linear infinite;
+    background-color: #cfcaca;
+    
+}
+
+.slides img {
+    width: 100%;
+    max-width: 100px;
+    margin: 30px;
+    
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-19%);
+    }
+}
+
+
+
+/* servicios */
+#textServicio{
+    margin: 30px;
+    margin-top: 55px;
+   
+
+}
+#serviciosTitle{
+    font-size: 80px;
+   
+}
+.card-title{
+    display: flex;
+    font-weight: 600;
+    font-size: 30px;
+text-align: center;
+justify-content: center;
+}
+.card{
+    background-color: rgb(17, 16, 16);
+    color: white;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(0, 0, 0);
+   
+}
+
+.card-text{
+    color: rgb(229, 228, 228);
+    
+}
+/* contacto */
+#contacto{
+  
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        background: linear-gradient(rgba(0 0 0 / .8),rgba(0 0 0 / .8)),url(./fondos/tableroCanvas.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+}
+.container {
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+    padding:20px;
+    gap:10px;
+    width: 1000px;
+    
+}
+
+.box-info {
+    color:#fff;
+    display:flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+
+.box-info > h1 {
+    text-align: left;
+    letter-spacing: 5px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap:25px
+    
+}
+
+.data > p {
+    font-size: 1rem;
+}
+
+.data > p > i {
+    color:crimson;
+    margin-right: 10px;
+    font-size:20px;
+}
+
+
+
+.links {
+    display:flex;
+    gap:15px;
+}
+
+.links > a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background: crimson;
+    text-align: center;
+    transition: .1s;
+}
+
+.links > a > i {
+    color:#fff;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    gap:15px;
+    margin-top: 10px;
+}
+
+.input-box {
+    position:relative;
+}
+
+.input-box > input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    outline:none;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    transition:.3s;
+    color:#fff;
+    
+}
+
+.input-box > input::placeholder,
+.input-box > textarea::placeholder {
+    color:#a3a3a3;
+    
+}
+
+.input-box > input:focus::placeholder,
+.input-box > textarea:focus::placeholder {
+    color:transparent;
+}
+
+.input-box > input:focus,
+.input-box > textarea:focus {
+    border-bottom:3px solid crimson;
+    animation: shake .2s;
+}
+
+.input-box > textarea {
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    outline: none;
+    transition:.3s;
+    color:#fff;
+    letter-spacing: 1.5px;
+}
+
+
+.input-box > i {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color:rgba(255 255 255 / .3);
+    transition: .3s;
+}
+
+.input-box > input:focus ~ i {
+    color:crimson;
+}
+
+form > button {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    background: crimson;
+    color:#fff;
+    border:none;
+    transition: .1s;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form > button:hover,
+.links > a:hover {
+    background: rgb(172, 16, 47);
+}
+
+
+@keyframes shake { 
+    0%, 100% {transform: translateX(0);} 
+    10%, 20%, 30%, 40%, 60% {transform: translateX(-5px);} 
+    20%, 25%, 30%, 35% {transform: translateX(5px);} 
+ }
+
+
+
+
+/* footer */
+#copyright{
+  color: #a3a3a3;
+  font-size: 10px;
+}
+
+
+
+/* responsive */
+
+/* footer */
+@media screen and (max-width:600px) {
+    .container {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+
+    .box-info {
+        gap:15px;
+    }
+
+    .box-info > h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* general */
+@media screen and (max-width:1024px) {
+    .navbar-toggler{
+        color: rgb(20, 18, 18);
+        background-color: #ffffff;
+      padding: 5px;
+        border-radius: 10%;
+        font-size: 15px;
+       
+      }
+      .normalHr{
+        margin-inline-start: 30%;
+        margin-inline-end: 30%;
+    }
+    #header{
+        height: 90vh;
+    }
+    #logo{
+        height:500px;
+        width: 500px;
+   }
+   .img-services{
+    height: 130px;
+    width: 130px;
+
+    #textAN{
+        font-size: 25px;
+    }
+    
+}
+
+}
+@media screen and (max-width: 769px){
+    .nav-link, .navbar-brand{
+        font-size: 15px;
+        margin-left: 10px;
+
+  }
+  .navbar-toggler{
+    color: rgb(20, 18, 18);
+    background-color: #ffffff;
+  padding: 5px;
+    border-radius: 10%;
+    font-size: 12px;
+   
+  }
+  .normalHr{
+    margin-inline-start: 40%;
+    margin-inline-end: 40%;
+}
+
+
+    #header{
+        height: 80vh;
+    }
+    #logo{
+        height:400px;
+        width: 400px;
+   }
+   .slides {
+    display: flex;
+    width: calc(100% * 6.6); /* 6 imágenes duplicadas para loop infinito */
+    animation: slide 18s linear infinite;
+    background-color: #cfcaca;
+    
+}
+
+.slides img {
+    max-width: 60px;
+    margin: 20px;
+    
+}
+   .img-services{
+    height: 100px;
+    width: 100px;  
+    }
+    #textAN{
+        font-size: 20px;
+    }
+    #buttom-form{
+        margin-bottom: 30px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    #header{
+        height: 70vh;
+    }
+    #logo{
+        height:250px;
+        width: 250px;
+   }
+
+   
+   .img-services{
+    height: 70px;
+    width: 70px;
+    }
+    #aN {
+        margin: 10px 10px 15px;
+        padding: 15px;
+        
+    }
+    #textAN{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 360px) {
+    #header{
+        height: 60vh;
+    }
+    #logo{
+        height:200px;
+        width: 200px;
+   }
+   .normalHr{
+    margin-inline-start: 33%;
+    margin-inline-end: 33%;
+}
+   .slides {
+    display: flex;
+    width: calc(100% * 10.3); /* 6 imágenes duplicadas para loop infinito */
+    animation: slide 18s linear infinite;
+    background-color: #cfcaca;
+    
+}
+
+.slides img {
+    max-width: 50px;
+    margin: 15px;
+    
+}
+   .img-services{
+    height: 80px;
+    width: 80px;
+    padding: 2px;
+    }
+    #aN {
+        margin: 5px 5px 20px;
+        padding: 10px;
+        
+    }
+    #textAN{
+        font-size: 14px;
+        color: #e2e1e1;
+    }
+    .card-body {
+        font-size: 13px;
+    }
+    .card-title{
+        font-size: 20px;
+    }
+
+    .box-info > h1 {
+        text-align: center;
+        letter-spacing: 5px;
+        font-size: 1.5rem;
+    }
+    .data > p{
+        font-size: 0.8rem;
+    }
+   
+    
+}
+
+
+/* fade-in */
+
+@media (prefers-reduced-motion: no-preference){
+
+        .card-img-top{ 
+        scale: 0.8; opacity: 0;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+        animation-range: 150px 500px;
+       
+    }
+
+    @keyframes fade-in {
+    
+        to {scale: 1;opacity: 1;}
+    }
+}
+
+
